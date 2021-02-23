@@ -33,7 +33,6 @@ function Climate(props) {
       const tempFar= res.data.data.getCityById[0].weather.temperature.actual;
       setTemperature((tempFar - 273.15));
       setIcon(res.data.data.getCityById[0].weather.summary.icon)
-      console.log(res.data.data);
     })
     .catch(error => console.log(error));
   },[1]);
